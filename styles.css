@@ -5,27 +5,67 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 :root {
   --primary-color: #000;
   --secoondary-color: #fff;
-  --tetiary-color: #00ff00;
-  --hover-color: #33ff33;
+  --tetiary-color: #00cc00;
+  --hover-color: #66ff66;
+  --subtext-color: #404040;
 }
 
+/* Container-card */
 .container {
-  background-color: aqua;
-  width: 40%;
+  background-color: purple;
+  width: 30%;
   max-width: 100%;
-  margin: 250px auto 0;
+  margin: 200px auto 0;
   padding: 20px;
+  border-radius: 10px;
 }
 
+/* Text-Padding */
 .header,
 .text,
 .btn,
-.signup {
+.signup,
+.settings {
   padding: 20px;
   text-align: center;
+}
+
+/* White color */
+.header,
+.text,
+.link {
+  color: var(--secoondary-color);
+}
+
+/* header */
+.header {
+  font-size: 40px;
+}
+
+/* T */
+.T {
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* Login Button */
+.btnlogin {
+  background-color: var(--tetiary-color);
+  padding: 10px;
+  border: none;
+  width: 80%;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Login Button Hover */
+.btnlogin:hover{
+    background-color: var(--hover-color);
+    transition: .5s;
 }
