@@ -11,17 +11,17 @@
 :root {
   --primary-color: #000;
   --secoondary-color: #fff;
-  --tetiary-color: #00cc00;
-  --hover-color: #66ff66;
-  --subtext-color: #404040;
+  --tetiary-color: #33ff33;
+  --hover-color: #80ff80;
+  --subtext-color: #737373;
 }
 
 /* Container-card */
 .container {
-  background-color: purple;
+  background-color: var(--primary-color);
   width: 30%;
   max-width: 100%;
-  margin: 200px auto 0;
+  margin: 160px auto 0;
   padding: 20px;
   border-radius: 10px;
 }
@@ -65,7 +65,24 @@
 }
 
 /* Login Button Hover */
-.btnlogin:hover{
-    background-color: var(--hover-color);
-    transition: .5s;
+.btnlogin:hover {
+  background-color: var(--hover-color);
+  transition: 0.5s;
+}
+
+/* sp-logo and txt */
+
+#sp-logo,
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.acc,
+a {
+  color: var(--subtext-color);
+  text-decoration: none;
 }
