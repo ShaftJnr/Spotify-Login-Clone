@@ -24,6 +24,16 @@
   margin: 160px auto 0;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+}
+/* Background-Image */
+body {
+  margin: 0;
+  background-image: url(/images/dark-bg.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 /* Text-Padding */
@@ -85,4 +95,31 @@
 a {
   color: var(--subtext-color);
   text-decoration: none;
+}
+
+/* Underline Animation for Settings */
+.st {
+  display: inline;
+  position: relative;
+  padding: 5px;
+}
+
+.st::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--subtext-color);
+  transition: transform 0.5s;
+}
+
+.st:hover::after {
+  transform: scaleX(1);
+}
+
+.link:hover {
+  color: var(--tetiary-color);
 }
